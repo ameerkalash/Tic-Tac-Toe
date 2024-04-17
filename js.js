@@ -56,6 +56,7 @@ function a(aa) {
 function reseat() {
   x_o = [0, 1, 2, 3, 4, 5, 6, 7, 8];
   r = "X";
+  chh = 0;
   document.getElementById("player1").innerHTML = `${player1} : X : ${player11}`;
   document.getElementById("player2").innerHTML = `${player2} : O : ${player22}`;
   document.getElementById("para").innerHTML = r + " TURN";
