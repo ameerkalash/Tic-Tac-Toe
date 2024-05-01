@@ -31,17 +31,18 @@ function a(aa) {
     // Check rows
     if (checkLine(x_o[i * 3], x_o[i * 3 + 1], x_o[i * 3 + 2])) {
       b();
-      break;
+      return;
     }
     // Check columns
     if (checkLine(x_o[i], x_o[i + 3], x_o[i + 6])) {
       b();
-      break;
+      return;
     }
   }
   // Check diagonals
   if (checkLine(x_o[0], x_o[4], x_o[8]) || checkLine(x_o[2], x_o[4], x_o[6])) {
     b();
+    return;
   }
   chh++;
   if (chh == 9) {
